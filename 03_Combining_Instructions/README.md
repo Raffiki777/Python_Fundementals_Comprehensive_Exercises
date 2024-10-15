@@ -1,19 +1,59 @@
 # Problem - Combining Instructions
 
-* Modify `exercise_03_combining_instructions_skeleton.py` to solve the problem as stated in the topic content.
-* You can run the program using the instructions in *To Run* below.
-* You can test technical correctness by running the unit tests as in the section *To Test* below.
+In this exercise, you will work on combining multiple Python concepts such as conditionals, functions, and input handling to solve problems. The tasks will focus on finding the maximum of three numbers and checking if a number falls within a specific range.
 
-### To Run
+## Instructions
 
-* `python3 exercise_03_combining_instructions_skeleton.py`
+Modify `combining_instructions.py` to complete the following functions:
 
-### To Test
+1. **max_three**: Determine the maximum of three numbers entered by the user. 
+2. **between_3_and_9**: Check whether a given number falls between 3 and 9.
 
-* To run all the unittests: `python3 -m unittest exercise_03_combining_instructions_test.py`
+### Expected Input/Output
 
-* To run a specific step's unittest:
-test1 *test_max_three*: `python3 -m unittest exercise_03_combining_instructions_test.TestExercise03.test_max_three`
-test2 *test_between_3_and_9*: `python3 -m unittest exercise_03_combining_instructions_test.TestExercise03.test_between_3_and_9`
+1. **max_three**:
+    - Input:
+      ```
+      3
+      8
+      6
+      ```
+    - Output:
+      ```
+      The max of the three numbers is: 8
+      ```
 
-* *Note*: at the minimum, these (*unedited*) tests must succeed.
+2. **between_3_and_9**:
+    - Input: `5`
+    - Output: `5 is in the range`
+
+    - Input: `2`
+    - Output: `The number is outside the given range.`
+
+## To Run
+
+To run the program, use the following command:
+```bash
+python3 combining_instructions.py
+```
+
+## To Test
+
+You can test the functions by running the test cases in `combining_instructions_test.py`. The tests will verify the correctness of your implementation.
+
+1. To run all the unit tests:
+   ```bash
+   python3 -m unittest combining_instructions_test.py
+   ```
+
+2. To run specific tests:
+   - Test the `max_three` function:
+     ```bash
+     python3 -m unittest combining_instructions_test.TestExercise03.test_max_three
+     ```
+   - Test the `between_3_and_9` function:
+     ```bash
+     python3 -m unittest combining_instructions_test.TestExercise03.test_between_3_and_9
+     ```
+
+**Note**: Ensure that all tests pass to confirm that your code works correctly.

@@ -1,25 +1,105 @@
 # Problem - Structuring Data
 
-* Modify `exercise_04_structuring_data_skeleton.py` to solve the problem as stated in the topic content.
-* You can run the program using the instructions in *To Run* below.
-* You can test technical correctness by running the unit tests as in the section *To Test* below.
+In this exercise, you will work with tuples and lists, along with functions that manipulate and evaluate these data structures. You will also implement a palindrome checker for strings. Follow the instructions to complete the tasks outlined below.
 
-### To Run
+## Instructions
 
-* `python3 exercise_04_structuring_data_skeleton.py`
+Modify `structuring_data.py` to complete the following functions:
 
-### To Test
+1. **element_in_tuple**: Check whether an element exists in a tuple.
+2. **list_to_tuple**: Convert a list to a tuple.
+3. **length_of_tuple**: Find the length of a tuple.
+4. **sum_of_list**: Return the sum of all numbers in a list.
+5. **multiply_list**: Return the product of all numbers in a list.
+6. **unique_list**: Return a new list with unique elements from the input list.
+7. **palindrome**: Check if a string is a palindrome.
 
-* To run all the unittests: `python3 -m unittest exercise_04_structuring_data_test.py`
+### Expected Input/Output
 
-* To run a specific step's unittest:
-test1 *test_tuple_var*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_tuple_var`
-test2 *test_element_in_tuple*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_element_in_tuple`
-test3 *test_list_to_tuple*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_list_to_tuple`
-test4 *test_length_of_tuple*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_length_of_tuple`
-test5 *test_sum_of_list*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_sum_of_list`
-test6 *test_multiply_list*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_multiply_list`
-test7 *test_unique_list*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_unique_list`
-test8 *test_palindrome*: `python3 -m unittest exercise_04_structuring_data_test.TestExercise04.test_palindrome`
+1. **element_in_tuple**:
+    - Input: `r` and `5`
+    - Output:
+      ```
+      Enter r:
+      True
+      Enter 5:
+      False
+      ```
 
-* *Note*: at the minimum, these (*unedited*) tests must succeed.
+2. **list_to_tuple**:
+    - Output:
+      ```
+      [5, 10, 7, 4, 15, 3]
+      (5, 10, 7, 4, 15, 3)
+      ```
+
+3. **length_of_tuple**:
+    - Output:
+      ```
+      ('W', 'e', 'T', 'h', 'i', 'n', 'k', 'C', 'o', 'd', 'e')
+      11
+      ```
+
+4. **sum_of_list**:
+    - Input: `(1, 5, 43, 2, 23)`
+    - Output: `74`
+
+5. **multiply_list**:
+    - Input: `(1, 5, 4, -2, 23)`
+    - Output: `-920`
+
+6. **unique_list**:
+    - Input: `[1, 1, 5, 5, 4, -2, 23, 7, 7, 7]`
+    - Output: `[1, 5, 4, -2, 23, 7]`
+
+7. **palindrome**:
+    - Input: `racecar`
+    - Output: `True`
+
+## To Run
+
+To run the main program, use the following command:
+```bash
+python3 structuring_data.py
+```
+
+## To Test
+
+You can test the functions by running the test cases in `structuring_data_test.py`. The test cases will ensure that each function works as expected.
+
+1. To run all unit tests:
+   ```bash
+   python3 -m unittest structuring_data_test.py
+   ```
+
+2. To run specific tests:
+   - Test `element_in_tuple`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_element_in_tuple
+     ```
+   - Test `list_to_tuple`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_list_to_tuple
+     ```
+   - Test `length_of_tuple`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_length_of_tuple
+     ```
+   - Test `sum_of_list`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_sum_of_list
+     ```
+   - Test `multiply_list`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_multiply_list
+     ```
+   - Test `unique_list`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_unique_list
+     ```
+   - Test `palindrome`:
+     ```bash
+     python3 -m unittest structuring_data_test.TestExercise04.test_palindrome
+     ```
+
+**Note**: Ensure all your code passes the tests for technical correctness.

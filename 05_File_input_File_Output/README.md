@@ -1,20 +1,66 @@
 # Problem - File Input and Output
 
-* Modify `exercise_05_file_input_and_output_skeleton.md` to solve the problem as stated in the topic content.
-* You can run the program using the instructions in *To Run* below.
-* You can test technical correctness by running the unit tests as in the section *To Test* below.
+In this exercise, you will work with file operations such as opening, appending, and reading a file. You will create functions to handle these operations and ensure they work correctly by using Python's file handling features.
 
-### To Run
+## Instructions
 
-* `python3 exercise_05_file_input_and_output_skeleton.md`
+Modify `file_input_and_output.py` to complete the following functions:
 
-### To Test
+1. **open_file**: Open a file and return its file object.
+2. **append_to_file**: Append a line of text to the file.
+3. **print_foods**: Print specific lines (19 to 23) from the file.
 
-* To run all the unittests: `python3 -m unittest exercise_05_file_input_and_output_test.py`
+### Expected Input/Output
 
-* To run a specific step's unittest:
-test1 *test_open_file*: `python3 -m unittest exercise_05_file_input_and_output_test.TestExercise05.test_open_file`
-test2 *test_append_to_file*: `python3 -m unittest exercise_05_file_input_and_output_test.TestExercise05.test_append_to_file`
-test3 *test_print_foods*: `python3 -m unittest exercise_05_file_input_and_output_test.TestExercise05.test_print_foods`
+1. **open_file**:
+    - Input: `food.txt`
+    - Output: The function should open the file and return the file object.
 
-* *Note*: at the minimum, these (*unedited*) tests must succeed.
+2. **append_to_file**:
+    - Input: `Rice`
+    - Output:
+      ```
+      Line appended successfully.
+      ```
+
+3. **print_foods**:
+    - Input: `wethinkcode.txt`
+    - Output:
+      ```
+      Code,
+      Bootcamp
+      2023
+      !
+      ```
+
+## To Run
+
+To run the program, use the following command:
+```bash
+python3 file_input_and_output.py
+```
+
+## To Test
+
+You can test the functions by running the test cases in `file_input_and_output_test.py`. The tests will check that the file operations work as expected.
+
+1. To run all unit tests:
+   ```bash
+   python3 -m unittest file_input_and_output_test.py
+   ```
+
+2. To run specific tests:
+   - Test `open_file`:
+     ```bash
+     python3 -m unittest file_input_and_output_test.TestExercise05.test_open_file
+     ```
+   - Test `append_to_file`:
+     ```bash
+     python3 -m unittest file_input_and_output_test.TestExercise05.test_append_to_file
+     ```
+   - Test `print_foods`:
+     ```bash
+     python3 -m unittest file_input_and_output_test.TestExercise05.test_print_foods
+     ```
+
+**Note**: Ensure your code passes all the tests to confirm correct implementation of file handling.

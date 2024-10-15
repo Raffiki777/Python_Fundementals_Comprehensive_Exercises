@@ -14,8 +14,8 @@ class TestExercise06(unittest.TestCase):
         sys.stdout = sys.__stdout__
         output = captured_output.getvalue().strip()
         convert_output = eval(output)
-        expected_output = {'Siyamthanda', 7, 'Tshepo', 9, 'Respect', 
-                           'Simphiwe', 'Khomotso', 'Khensani', 'Nkululeko', 'Ayanda', 23}
+        expected_output = {"Anele", "Litha", "Nontando", 39, "Gomolemo", "Tshegofatso", "Tanatswa", 38,
+                           "Monwabisi", "Vuyisile", "Dikeledi",77, "Rafiki"}
 
         for x in convert_output:
             if x in expected_output:
@@ -27,16 +27,15 @@ class TestExercise06(unittest.TestCase):
         self.assertTrue(
             bool_output, (f"\n{expected_output} != {convert_output}"))
 
-    def test_remove_yankho(self):
+    def test_remove_(self):
         bool_output = None
         captured_output = StringIO()
         sys.stdout = captured_output
-        remove_yankho()
+        remove_katlego()
         sys.stdout = sys.__stdout__
         output = captured_output.getvalue().strip()
         convert_output = eval(output)
-        expected_output = {'Ayanda', 'Tshepo', 'Respect', 'Khensani', 
-                           'Simphiwe', 7, 'Siyamthanda', 9, 23, 'Khomotso'}
+        expected_output = {"Anele", "Litha", "Nontando", 39, "Gomolemo", "Tshegofatso", "Tanatswa", 38, "Monwabisi", "Vuyisile", "Dikeledi",77, "Rafiki"}
 
         for x in convert_output:
             if x in expected_output:
@@ -56,8 +55,7 @@ class TestExercise06(unittest.TestCase):
         sys.stdout = sys.__stdout__
         output = captured_output.getvalue().strip()
         convert_output = eval(output)
-        expected_output = {'Respect', 'Simphiwe', 'Khomotso', 7, 9, 
-                           'Khensani', 'Ayanda', 'Loveness', 'Tshepo', 23, 'Nkululeko', 'Siyamthanda', 'Onalerona'}
+        expected_output = {"Anele", "Litha", "Nontando", 39, "Gomolemo", "Tshegofatso", "Katlego", "Tanatswa", 38, "Monwabisi", "Vuyisile", "Dikeledi",77, "Rafiki", "Kyle", "Sihle"}
 
         for x in convert_output:
             if x in expected_output:
@@ -77,7 +75,7 @@ class TestExercise06(unittest.TestCase):
         sys.stdout = sys.__stdout__
         output = captured_output.getvalue().strip()
         convert_output = eval(output)
-        expected_output = {'Respect', 'Nkululeko', 'Siyamthanda', 'Tshepo', 'Khomotso'}
+        expected_output = {'Kyle', 'Tshegofatso'}
 
         for x in convert_output:
             if x in expected_output:

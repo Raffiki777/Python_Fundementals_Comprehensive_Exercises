@@ -1,22 +1,48 @@
 # Problem - Data Types
 
-* Modify `exercise_01_data_types_skeleton.py` to solve the problem as stated in the topic content.
-* You can run the program using the instructions in *To Run* below.
-* You can test technical correctness by running the unit tests as in the section *To Test* below.
+In this exercise, you will work on understanding and using different data types in Python: booleans, integers, strings, and floats. Additionally, you will combine these data types to construct a sentence with specific formatting. Follow the instructions to modify `data_types.py` and run the program as described below.
 
-### To Run
+## Instructions
 
-* `python3 exercise_01_data_types_skeleton.py`
+* Modify `data_types.py` to complete each of the defined functions (`boolean`, `integer`, `string`, `convert_to_float`, and `all_data_types`) based on the problem descriptions in the comments.
+* Test the correctness of your implementation using the provided test suite.
 
-### To Test
+## To Run
 
-* To run all the unittests: `python3 -m unittest exercise_01_data_types_test.py`
+To run the main program, use:
+```bash
+python3 data_types.py
+```
 
-* To run a specific step's unittest:
-test1 *test_boolean*: `python3 -m unittest exercise_01_data_types_test.TestExercise01.test_boolean`
-test2 *test_integer*: `python3 -m unittest exercise_01_data_types_test.TestExercise01.test_integer`
-test3 *test_string*: `python3 -m unittest exercise_01_data_types_test.TestExercise01.test_string`
-test4 *test_float*: `python3 -m unittest exercise_01_data_types_test.TestExercise01.test_float`
-test5 *test_all_data_types*: `python3 -m unittest exercise_01_data_types_test.TestExercise01.test_all_data_types`
+## To Test
 
-* *Note*: at the minimum, these (*unedited*) tests must succeed.
+The test file `data_types_test.py` includes several unit tests to verify the functionality of each function. You can run them as follows:
+
+1. To run all the unit tests:
+   ```bash
+   python3 -m unittest data_types_test.py
+   ```
+
+2. To run specific tests:
+   - Test the `boolean` function:
+     ```bash
+     python3 -m unittest data_types_test.TestExercise01.test_boolean
+     ```
+   - Test the `integer` function:
+     ```bash
+     python3 -m unittest data_types_test.TestExercise01.test_integer
+     ```
+   - Test the `string` function:
+     ```bash
+     python3 -m unittest data_types_test.TestExercise01.test_string
+     ```
+   - Test the `convert_to_float` function:
+     ```bash
+     python3 -m unittest data_types_test.TestExercise01.test_float
+     ```
+   - Test all data types together:
+     ```bash
+     python3 -m unittest data_types_test.TestExercise01.test_all_data_types
+     ```
+
+**Note**: At a minimum, your code should pass all unedited tests.
