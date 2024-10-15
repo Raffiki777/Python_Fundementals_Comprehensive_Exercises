@@ -3,6 +3,7 @@ def open_file(filename):
     Write a python function that will open a file
     """
     #enter your code here
+    
 
 
 def append_to_file(filename, line):
